@@ -1,72 +1,48 @@
 $footer-bg: $purple;
 $footer-color: $white;
-$footer-hover-color: $green;
+$footer-link-hover: $green;
 $footer-nav-text: $white;
-$footer-font: $josefin;
+$footer-nav-font: $josefin;
 
 
 footer{
     padding: 30px 0;
     background-color: $footer-bg;
-    font-family: $footer-font;
-    .container{
+    
         ul{
             list-style: none;
             padding-left: 0;
-            margin-bottom: 40px;
-            li{
-                a{
-                    display: block;
-                    text-align: center;
-                    color: $footer-color;
-                    padding: 5px 0;
-                    
-                    &:hover, 
-                    &.active{
-                        color: $footer-hover-color;
+            margin-bottom: 30px;
+            a{
+                display: block;
+                text-align: center;
+                padding: 5px 0;
+                font-family: $footer-nav-font;
+                font-weight: $font-bold;
+                color: $footer-color;
+                font-size: 1.8rem;
+        
+                &:hover, 
+                &.active{
+                color: $footer-link-hover;
                     }
                 } // a end
-            } // li end
         } // ul end
         p{
             text-align: center;
             color: $footer-color;
-            margin: 0;
         }
-    } // .container end
 } // footer end
 
 @media(min-width: 768px){
-    footer{
-        .container{
+    footer{ 
+        ul{
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            ul{
-                display: flex;
-                margin-bottom: 0;
-                li{
-                    
-                    a{
-                        padding: 5px;
-                    }
-                } // li end
-            } // ul end
-        } // .container end
-    } // footer end
-}
-
-@media(min-width: 992px){
-    footer{
-        .container{
-            ul{
-                li{     
-                    a{
-                        padding: 5px 15px;
-                    }
-                } // li end
-            } // ul end
-        } // .container end
+            justify-content: center;
+            align-items: center;    
+            a{
+                padding: 5px 20px;
+            }
+        } // ul end
     } // footer end
 }
