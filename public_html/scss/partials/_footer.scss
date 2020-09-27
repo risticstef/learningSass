@@ -1,6 +1,5 @@
 $footer-bg: $purple;
 $footer-color: $white;
-$footer-link-hover: $green;
 $footer-nav-text: $white;
 $footer-nav-font: $josefin;
 
@@ -24,7 +23,7 @@ footer{
         
                 &:hover, 
                 &.active{
-                color: $footer-link-hover;
+                color: lighten(complement($footer-bg), 15%);
                     }
                 } // a end
         } // ul end
