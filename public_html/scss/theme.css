@@ -3,10 +3,10 @@
   display: inline-block;
   padding: 10px 25px;
   border: none;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 5px 0% 5px 0%;
+  -moz-border-radius: 5px 0% 5px 0%;
+  -webkit-border-radius: 5px 0% 5px 0%;
+  -o-border-radius: 5px 0% 5px 0%;
   cursor: pointer;
 }
 
@@ -447,7 +447,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #8a059e;
 }
 
@@ -506,22 +506,36 @@ header nav ul li a:hover, header nav ul li a.active {
   }
 }
 
+.home-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff;
+}
+
 .about-section {
-  padding: 30px 0;
-  background: #ffffff;
+  padding: 30px 0 30px;
+  background-color: #ffffff;
 }
 
 .service-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
+  background-color: transparent;
 }
 
 .comment-section {
-  padding: 30px 0;
-  background: #ffffff;
+  padding: 30px 0 30px;
+  background-color: #ffffff;
+}
+
+.comment-section .comment-img img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .course-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
+  background-color: transparent;
 }
 
 .course-section table {
@@ -558,8 +572,13 @@ header nav ul li a:hover, header nav ul li a.active {
   cursor: pointer;
 }
 
+.contact-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff;
+}
+
 footer {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #8a059e;
 }
 
