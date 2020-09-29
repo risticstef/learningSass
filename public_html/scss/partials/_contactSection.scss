@@ -1,5 +1,5 @@
 $contact-bg: $white;
 
 .contact-section{
-    @include styleSection(150px, 150px, $contact-bg)
+    @include styleSection(150px, 150px, $contact-bg);
 }
