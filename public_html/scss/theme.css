@@ -39,7 +39,7 @@
 
 .btn-warning {
   background-color: #f77a05;
-  color: #ffffff;
+  color: #000;
 }
 
 .btn-warning:hover {
@@ -569,7 +569,6 @@ header nav ul li a:hover, header nav ul li a.active {
 
 .course-section table tbody tr:hover {
   background-color: #c8c8c8;
-  cursor: pointer;
 }
 
 .contact-section {
