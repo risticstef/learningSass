@@ -1,5 +1,39 @@
 $contact-bg: $white;
+$input-border: 1px solid $black;
 
 .contact-section{
     @include styleSection(150px, 150px, $contact-bg);
+
+    background-image: url(../img/contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-attachment: fixed;
+
+
+    h2{
+        text-align: center;
+    }
+
+    .contact-form{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+
+        .form-group{
+            margin-bottom: 1.5rem;
+            label{
+                display: block;
+            }
+
+            .form-control{
+                display: block;
+                width: 100%;
+                border: $input-border;
+                padding: 0px 10px;
+                line-height: 4rem;
+                @include radius(5px)
+            }
+        }
+    }
 }

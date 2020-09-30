@@ -5,9 +5,33 @@ $comment-bg: $white;
     // background: $comment-bg;
     @include styleSection(30px, 30px, $comment-bg);
 
-    .comment-img{
-        img{
-            @include radius(50%);
+    .comment-list{
+        list-style: none;
+        padding: 0px;
+
+        .comment-item{
+            display: flex;
+
+            .comment-body{
+                padding-left: 10px;
+            }
+
+            .comment-img{
+                flex: 0 0 50px;
+                img{
+                    @include radius(10%);
+                }
+            }
+        }  // .comment-item
+    } // .comment-list   
+} // .comment-section
+
+@media(min-width: 768px){
+    .comment-section{
+        .comment-list{
+            .comment-img{
+                flex: 0 0 90px !important;
+            }
         }
     }
 }

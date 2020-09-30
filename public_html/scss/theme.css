@@ -523,6 +523,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   color: #8a059e;
+  margin-top: 0px;
 }
 
 header {
@@ -609,11 +610,40 @@ header nav ul li a:hover, header nav ul li a.active {
   background-color: #ffffff;
 }
 
-.comment-section .comment-img img {
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
+.comment-section .comment-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.comment-section .comment-list .comment-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-section .comment-list .comment-item .comment-body {
+  padding-left: 10px;
+}
+
+.comment-section .comment-list .comment-item .comment-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+}
+
+.comment-section .comment-list .comment-item .comment-img img {
+  border-radius: 10%;
+  -moz-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+@media (min-width: 768px) {
+  .comment-section .comment-list .comment-img {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 90px !important;
+            flex: 0 0 90px !important;
+  }
 }
 
 .course-section {
@@ -657,6 +687,41 @@ header nav ul li a:hover, header nav ul li a.active {
 .contact-section {
   padding: 150px 0 150px;
   background-color: #ffffff;
+  background-image: url(../img/contact.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.contact-section h2 {
+  text-align: center;
+}
+
+.contact-section .contact-form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-section .contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-section .contact-form .form-group label {
+  display: block;
+}
+
+.contact-section .contact-form .form-group .form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  padding: 0px 10px;
+  line-height: 4rem;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 footer {
